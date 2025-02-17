@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
 This project is licensed under the ${license} license. For more details, see [this link](${renderLicenseLink(license)}).`;
 }
 
-function generateMarkdown(data) {
+export default function generateMarkdown(data) {
   return `# ${data.title}
 
 ${renderLicenseBadge(data.license)}
@@ -76,4 +76,4 @@ For additional questions, email me at: ${data.email}
 `;
 }
 
-module.exports = generateMarkdown;
+
